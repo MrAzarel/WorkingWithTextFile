@@ -7,7 +7,9 @@ namespace ReadWrite
 
     class WorkingWithTextFile
     {
-        public static void Write(string str)
+        public static string str = ""; 
+
+        public static void Write()
         {
             try
             {
@@ -23,7 +25,6 @@ namespace ReadWrite
 
         public static void Read()
         {
-            String str;
             try
             {
                 StreamReader sr = new StreamReader("E:\\Text.txt");
@@ -47,9 +48,7 @@ namespace ReadWrite
     {
         static void Main(string[] args)
         {
-
-            WorkingWithTextFile.Write("Hi");
-            WorkingWithTextFile.Write("It's me, Mario");
+            WorkingWithTextFile.Write();
             WorkingWithTextFile.Read();
         }
     }
